@@ -1,9 +1,11 @@
+USE test;
 
-CREATE TABLE `part` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL DEFAULT '',
-  `isRequired` bit(1) NOT NULL,
-  `count` int(11) NOT NULL DEFAULT '0',
+DROP TABLE IF EXISTS part;
+CREATE TABLE part (
+  id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  name varchar(100) NOT NULL DEFAULT '',
+  isRequired bit(1) NOT NULL,
+  count int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
